@@ -1,0 +1,19 @@
+[package]
+name = "geodecrypt-lists"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "Parseurs des listes de sanctions (OFAC SDN, liste consolidée UE, ONU) : entrées normalisées, provenance datée, empreinte vérifiable."
+license = "Apache-2.0"
+repository = "https://github.com/geodecrypt/geodecrypt-lists"
+keywords = ["sanctions", "ofac", "export-control", "compliance", "csv"]
+categories = ["parser-implementations", "parsing"]
+
+[dependencies]
+sha2 = "0.10"
+
+[dev-dependencies]
+
+[[example]]
+name = "compter"
+path = "examples/compter.rs"
